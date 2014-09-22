@@ -1,0 +1,51 @@
+
+<!-- saved from url=(0129)https://6d1a107dca32a981f78f66426e9b7bd23b9efcb5.googledrive.com/host/0Bz2ZkT6qWPYTY1VNdkhxajZCekk/RotatingCube/RotatingCube.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Rotating Cube</title><style type="text/css"></style><style type="text/css">@font-face {
+  font-family: "PjsEmptyFont";
+  src: url('data:application/x-font-ttf;base64,AAEAAAAKAIAAAwAgT1MvMgAAAAAAAAEoAAAAVmNtYXAAAAAAAAABiAAAACxnbHlmAAAAAAAAAbwAAAAkaGVhZAAAAAAAAACsAAAAOGhoZWEAAAAAAAAA5AAAACRobXR4AAAAAAAAAYAAAAAGbG9jYQAAAAAAAAG0AAAABm1heHAAAAAAAAABCAAAACBuYW1lAAAAAAAAAeAAAAAgcG9zdAAAAAAAAAIAAAAAEAABAAAAAQAAAkgTY18PPPUACwAgAAAAALSRooAAAAAAyld0xgAAAAAAAQABAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEAAAACAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACMAIwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAMAAQAAAAwABAAgAAAABAAEAAEAAABB//8AAABB////wAABAAAAAAAAAAgAEgAAAAEAAAAAAAAAAAAAAAAxAAABAAAAAAABAAEAAQAAMTcBAQAAAAAAAgAeAAMAAQQJAAEAAAAAAAMAAQQJAAIAAgAAAAAAAQAAAAAAAAAAAAAAAAAA')
+       format('truetype');
+}</style></head>
+<body bgcolor="ffffff" text="0f0000" link="0000f0" vlink="23238E" alink="ffffff">
+<center>
+<h1>Rotating Cube</h1>
+<br>
+		<script src="./Rotating Cube_files/processing.js"></script>
+<canvas data-processing-sources="RotatingCube.pde" tabindex="0" id="__processing0" width="300" height="300"></canvas>
+	
+<br>
+click and drag to change position of light
+</center>
+
+
+
+
+
+<p>In addition to the 2 dimensional graphics functions you've used, Processing also has a set of 3 dimensional
+graphics functions. In this assignment we'll use the <code>box()</code> to draw a cube.
+ 
+</p><h3>Steps to completing this assignment</h3>
+
+<ol><li>Start a new program in Processing. Include the functions <code>void setup()</code> and <code>void
+draw()</code>
+</li><li>In <code>void setup()</code> you will need to call the 3 argument version of <code>size()</code>, e.g. 
+<code>size(300, 300, P3D);</code> since we will be using the 3d functions.
+</li><li>In <code>draw()</code> you'll use the following functions in this order:
+<ul> <li><code>background()</code>
+</li><li><code><a href="http://processing.org/reference/translate_.html">translate()</a></code> moves the coordinates where the box will be drawn
+</li><li><code><a href="http://processing.org/reference/rotateX_.html">rotateX()</a></code> rotates the box around the X axis
+</li><li><code><a href="http://processing.org/reference/rotateY_.html">rotateY()</a></code> rotates the box around the Y axis
+</li><li><code><a href="http://processing.org/reference/box_.html">box()</a></code> draws the rotated and translated box
+</li></ul>
+Experiment with different arguments to get a feel for how they effect the box.
+</li><li>You'll need someway to rotate the cube. It could rotate on its own, or
+you could add something like <code>mouseDragged()</code> with <code>mouseX</code> and <code>mouseY</code>
+used to change the
+amount of rotation. Whatever method you choose, since the amount of rotation will be changing,
+you'll will probably need a couple variables to store the amount of rotation in the x and y directions.
+
+</li><li>You may want to use <a href="http://processing.org/reference/pointLight_.html">pointLight()</a> to make a
+3 dimensional lighting effect.
+</li><li>These are only suggestions, feel free to modify this program as you wish.
+ </li></ol>
+
+<span style="position: absolute; top: 0px; left: 0px; opacity: 0; font-family: PjsEmptyFont, fantasy;">AAAAAAAA</span></body></html>

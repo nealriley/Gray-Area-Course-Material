@@ -1,0 +1,53 @@
+
+<!-- saved from url=(0131)https://6d1a107dca32a981f78f66426e9b7bd23b9efcb5.googledrive.com/host/0Bz2ZkT6qWPYTY1VNdkhxajZCekk/HundredShapes/HundredShapes.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>One Hundred Random Shapes</title><style type="text/css"></style><style type="text/css">@font-face {
+  font-family: "PjsEmptyFont";
+  src: url('data:application/x-font-ttf;base64,AAEAAAAKAIAAAwAgT1MvMgAAAAAAAAEoAAAAVmNtYXAAAAAAAAABiAAAACxnbHlmAAAAAAAAAbwAAAAkaGVhZAAAAAAAAACsAAAAOGhoZWEAAAAAAAAA5AAAACRobXR4AAAAAAAAAYAAAAAGbG9jYQAAAAAAAAG0AAAABm1heHAAAAAAAAABCAAAACBuYW1lAAAAAAAAAeAAAAAgcG9zdAAAAAAAAAIAAAAAEAABAAAAAQAAAkgTY18PPPUACwAgAAAAALSRooAAAAAAyld0xgAAAAAAAQABAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEAAAACAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACMAIwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAMAAQAAAAwABAAgAAAABAAEAAEAAABB//8AAABB////wAABAAAAAAAAAAgAEgAAAAEAAAAAAAAAAAAAAAAxAAABAAAAAAABAAEAAQAAMTcBAQAAAAAAAgAeAAMAAQQJAAEAAAAAAAMAAQQJAAIAAgAAAAAAAQAAAAAAAAAAAAAAAAAA')
+       format('truetype');
+}</style></head>
+<body bgcolor="ffffff" text="0f0000" link="0000f0" vlink="23238E" alink="ffffff">
+<h1><center>
+One Hundred Random Shapes
+<br>
+		<script src="./One Hundred Random Shapes_files/processing.js"></script>
+<canvas data-processing-sources="HundredShapesv2.pde" tabindex="0" id="__processing0" width="600" height="400"></canvas>
+
+</center></h1>
+
+<p>Your assignment is to write a program that uses a loop to draw 
+100 random shapes to the screen. Each time the screen is redrawn,
+the shapes will have some random difference. It could be location, color, size, opacity, or whatever. Your program
+may use 2d or 3d graphics. Your
+program doesn't have to look like mine above, it's exact appearence is entirely up to you. If you want,
+you could number each shape to show that there really are 100 shapes
+on the screen. Have fun and be creative! 
+
+
+
+
+ 
+</p><h3>Steps to completing this assignment</h3>
+
+<ol><li>Start a new program in Processing. <b>Do not name your program <code>100Shapes</code> or any name
+that starts with a number. <i>Java does not allow program names to start with anything other than a letter of
+the alphabet.</i></b>
+</li><li>Write <code>void setup()</code> and <code>void draw()</code> functions. 
+</li><li>In <code>draw()</code>, write a loop that runs 100 times. Inside that loop place your code that generates
+one random shape.
+</li><li>If you are using 3d graphics be sure to translate <b>back</b> after you draw your shape. For instance, my code
+looked like:
+<pre><code>
+  translate(xOffset,yOffset,zOffset);
+  box(50);
+  translate(-xOffset,-yOffset,-zOffset);
+</code></pre>
+where <code>xOffset,yOffset, zOffset</code> and <code>randomSize</code> are <b>variables
+that I declared</b> and assigned random values. 
+<p>Note: to keep your shapes from being translated outside the viewable
+region, have the <code>zOffset</code> be a random <i>negative</i> number. Translating in the negative z direction
+pushes the shape "away from you."
+
+</p></li><li>Don't forget to put your name, class and assignment in comments.
+ </li></ol>
+
+<span style="position: absolute; top: 0px; left: 0px; opacity: 0; font-family: PjsEmptyFont, fantasy;">AAAAAAAA</span></body></html>

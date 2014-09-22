@@ -1,0 +1,90 @@
+
+<!-- saved from url=(0129)https://6d1a107dca32a981f78f66426e9b7bd23b9efcb5.googledrive.com/host/0Bz2ZkT6qWPYTY1VNdkhxajZCekk/BouncingBall/BouncingBall.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Bouncing Ball</title><style type="text/css"></style><style type="text/css">@font-face {
+  font-family: "PjsEmptyFont";
+  src: url('data:application/x-font-ttf;base64,AAEAAAAKAIAAAwAgT1MvMgAAAAAAAAEoAAAAVmNtYXAAAAAAAAABiAAAACxnbHlmAAAAAAAAAbwAAAAkaGVhZAAAAAAAAACsAAAAOGhoZWEAAAAAAAAA5AAAACRobXR4AAAAAAAAAYAAAAAGbG9jYQAAAAAAAAG0AAAABm1heHAAAAAAAAABCAAAACBuYW1lAAAAAAAAAeAAAAAgcG9zdAAAAAAAAAIAAAAAEAABAAAAAQAAAkgTY18PPPUACwAgAAAAALSRooAAAAAAyld0xgAAAAAAAQABAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEAAAACAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACMAIwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAMAAQAAAAwABAAgAAAABAAEAAEAAABB//8AAABB////wAABAAAAAAAAAAgAEgAAAAEAAAAAAAAAAAAAAAAxAAABAAAAAAABAAEAAQAAMTcBAQAAAAAAAgAeAAMAAQQJAAEAAAAAAAMAAQQJAAIAAgAAAAAAAQAAAAAAAAAAAAAAAAAA')
+       format('truetype');
+}</style></head>
+<body bgcolor="ffffff" text="0f0000" link="0000f0" vlink="23238E" alink="ffffff">
+<h1><center>Bouncing Ball<p>
+<script src="./Bouncing Ball_files/processing.js"></script>
+<canvas data-processing-sources="BouncingBall.pde" tabindex="0" id="__processing0" width="300" height="300" style="image-rendering: -webkit-optimize-contrast !important;"></canvas>
+
+</p></center></h1>
+
+<h3>Background</h3>
+This assignment is the first step in creating a single player Pong game. Pong was the first video game to
+achieve commercial success. It was invented in 1972.  It's a little known fact that
+the programmer who worked with Nolan Bushnell at Atari on Pong is a Lowell alumnus:  Allan Alcorn.   At first Pong was
+only found in commercial arcades, but later in 1974 it achieved wide success as a home computer game.  The Pong game is
+important historically as it was the first computer many people brought into their homes. It was the first human computer
+interface many people experienced.  Computer Programmers use the term "killer app" to mean an important (killer)
+application (program) that has wide appeal.  Many people will buy their first computer to run a particular "killer app" .
+Pong was the "killer app" that helped to make home video games successful.  
+
+
+
+<h3>Starting the Assignment</h3>
+For this assignment, you will need to create your own <b><code>Ball</code></b> class. In designing a class, you
+need to ask yourself, what do these objects <i>have</i> and what do they <i>do</i>.
+For everything they <i>have</i> we'll create a variable and for everything they <i>do</i> we will create a function.
+For our <b><code>Ball</code></b> we will need
+<ul><li>two <code>int</code> variables for the x and y coordinates
+</li><li>two <code>boolean</code> "direction" variables for that hold whether the ball is going up, and whether it is going to the right
+</li><li><code>Ball()</code> (called a <i>constructor</i>) that will intialize those 4 variables, meaning <i>set them equal to their first values</i>
+</li><li><code>void move()</code>	moves the ball in the current direction of travel
+</li><li><code>void bounce()</code> changes the direction variables if the ball hits one side of the screen
+</li><li><code>void show()</code>		draws a white circle with center (x,y)
+</li></ul>
+
+
+
+<h3><code>move()</code></h3>
+
+
+<p>The <code>move()</code> function is pretty easy.  In move we check to see the the ball is going right, with code like
+<code>if(right == true)</code>. If it is,
+we increase <code>x</code> by 1 (or some other number), otherwise we decrease the <code>x</code> . 
+Then we check to see if the ball is
+going down.  If it is we increase <code>y</code>, otherwise we decrease <code>y</code> .
+
+</p><h3><code>bounce()</code></h3>
+
+<p>In <code>bounce()</code> we check to see if the ball has reached the edge of the screen.
+If it has, we change it's direction by changing one of the <code>boolean</code> variables with code like
+</p><pre> <code>
+if(x &lt; 0)
+{
+   right = true;
+} </code> </pre>
+
+<h3><code>setup()</code> and <code>draw()</code> and the rest of the program</h3>
+Creating a class is like writing a blueprint. You haven't actually
+"made a ball" until you use the blueprint to build a <code><b>new Ball()</b></code>.
+You will need to declare a <code><b>Ball</b></code> variable at the top of the program and initialize it
+to be a <code><b>new Ball()</b></code> in
+<code><b>setup()</b>. <b>draw()</b></code> will erase the screen and then <code><b>move()</b></code>,
+<code><b>bounce()</b></code>, and
+<code><b>show()</b></code> the Ball.
+
+<p>Submit the URL of your applet along with your code (the <code><b>.pde</b></code> file(s)) via the school loop
+drop box for the assignment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</p><span style="position: absolute; top: 0px; left: 0px; opacity: 0; font-family: PjsEmptyFont, fantasy;">AAAAAAAA</span></body></html>

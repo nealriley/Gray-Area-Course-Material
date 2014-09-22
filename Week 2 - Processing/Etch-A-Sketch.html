@@ -1,0 +1,65 @@
+
+<!-- saved from url=(0127)https://6d1a107dca32a981f78f66426e9b7bd23b9efcb5.googledrive.com/host/0Bz2ZkT6qWPYTY1VNdkhxajZCekk/EtchASketch/EtchASketch.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Etch-A-Sketch</title>
+	 
+	<style type="text/css"></style><style type="text/css">@font-face {
+  font-family: "PjsEmptyFont";
+  src: url('data:application/x-font-ttf;base64,AAEAAAAKAIAAAwAgT1MvMgAAAAAAAAEoAAAAVmNtYXAAAAAAAAABiAAAACxnbHlmAAAAAAAAAbwAAAAkaGVhZAAAAAAAAACsAAAAOGhoZWEAAAAAAAAA5AAAACRobXR4AAAAAAAAAYAAAAAGbG9jYQAAAAAAAAG0AAAABm1heHAAAAAAAAABCAAAACBuYW1lAAAAAAAAAeAAAAAgcG9zdAAAAAAAAAIAAAAAEAABAAAAAQAAAkgTY18PPPUACwAgAAAAALSRooAAAAAAyld0xgAAAAAAAQABAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEAAAACAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACMAIwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAMAAQAAAAwABAAgAAAABAAEAAEAAABB//8AAABB////wAABAAAAAAAAAAgAEgAAAAEAAAAAAAAAAAAAAAAxAAABAAAAAAABAAEAAQAAMTcBAQAAAAAAAgAeAAMAAQQJAAEAAAAAAAMAAQQJAAIAAgAAAAAAAQAAAAAAAAAAAAAAAAAA')
+       format('truetype');
+}</style></head>
+	<body><center>
+	<h1>Etch-A-Sketch</h1><br>
+			
+<script src="./Etch-A-Sketch_files/processing.js"></script>
+<canvas data-processing-sources="EtchASketch.pde" tabindex="0" id="__processing0" width="300" height="300" style="image-rendering: -webkit-optimize-contrast !important;"></canvas>
+			
+</center>
+<center>
+				<p>Click on the applet to start
+<br>Press 'a', 's', 'd', or 'w' to make a design
+<br>Press Caps Lock for symmetrical reflections
+<br>Press the first letter of the color name to change the color
+<br>Reload or Refresh the page to erase and start again
+</p></center>
+
+<h3>Background:</h3>
+The Etch-A-Sketch is a plastic tablet that lets you make designs by turning knobs that control a point (called a stylus). The left and right knobs control horizontal and vertical rods, moving the stylus where the two rods meet. When the stylus moves, it scrapes the screen, which is coated with a mixture of aluminum powder and plastic beads, leaving the line you see. The first Etch-A-Sketch was sold in 1960. Through television advertising it went on to become one of the most popular toys ever made.
+
+<p>In this assignment you will create an electronic version of the Etch-A-Sketch. This program will give you practice with <code>if</code> statements and keyboard input.
+
+</p><p>Since this is a larger program than the previous assignments, you may want to complete it in steps.
+
+</p><h3>Step One:</h3>
+It is a good idea to start by writing the code that allows you to "draw". We can use the <code>point()</code> function
+to draw one dot at a time on the screen. The function takes two integer arguments--the x and y coordinates of the point.
+
+<p>Here is an outline of the basic program. Your job is to translate the outline into computer code.
+You should then have a working program that will form the beginning of this assignment.
+
+   </p><ol><li>Declare two integer variables for the X &amp; Y coordinates of the stylus and initialize them to the center of the screen
+         </li><li>Write a <code>setup()</code> function that
+		<ol type="a"><li>sizes the screen
+				</li><li>sets the <code>background()</code>
+				</li><li>sets the initial <code>stroke()</code> color</li></ol>
+         </li><li>Write a <code>draw()</code> function and leave it empty for now
+         </li><li>Write a <code>keyPressed()</code> function with the following <code>if</code> statements
+               <ol type="a"><li>if the key pressed means left
+                     <ol type="i"> <li>decrease the X coordinate by one 
+						</li><li>draw a point at the current coordinates</li></ol>
+               </li><li>if the key pressed means right
+                     <ol type="i"> <li>increase the X coordinate by one 
+						</li><li>draw a point at the current coordinates</li></ol>
+               </li><li>if the key pressed means up
+                     <ol type="i"> <li>decrease the Y coordinate by one 
+						</li><li>draw a point at the current coordinates</li></ol>
+               </li><li>if the key pressed means down
+                     <ol type="i"> <li>increase the Y coordinate by one 
+						</li><li>draw a point at the current coordinates</li></ol>
+        </li></ol></li></ol>
+
+<h3>Step Two:</h3>
+Once you have the basic program working you can add features and graphics to make your program more interesting.
+Have fun and be creative! Your etch-a-sketch doesn't have to look like any other.
+	
+
+<span style="position: absolute; top: 0px; left: 0px; opacity: 0; font-family: PjsEmptyFont, fantasy;">AAAAAAAA</span></body></html>
