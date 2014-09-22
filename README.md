@@ -1,6 +1,8 @@
-Gray Area Fall Immersive
+# Gray Area Fall Immersive
 
-* Some things here
+## Week 2 - Processing
 
-* Some other things here
-# Blah Blah
+## Week 3 - Javascript
+
+## Week 4 - NodeJS
+
